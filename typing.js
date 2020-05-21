@@ -46,16 +46,19 @@ function start() {
     interval = setInterval(count, 10)
   }
   var totta = textentered
+  console.log("total "+totta);
   // words.innerHTML = 'Total words typed:' + textentered
   return totta
 }
 
 function final() {
   clearInterval(interval)
-  var sabda = start
-  var speedo = count
-  var actual = Math.floor(start / count)
-  finall.innerHTML = 'you can write in the speed of :' + actual
+  var sabda = start()
+  var speedo = count()/100
+  console.log(sabda+" "+speedo)
+  var actual = Math.floor(sabda / speedo)
+  console.log(actual)
+  finall.innerHTML = 'you can write in the speed of :' + actual +" word per second"
 }
 // reset everything
 function TotalReset() {
@@ -67,9 +70,9 @@ function TotalReset() {
 }
 // event will be listened
 
-typeareas.addEventListener('keypress', start, false)
-submit.addEventListener(onclick, final, false)
-resetbtn.addEventListener(onclick, TotalReset, false)
+typeareas.addEventListener("keypress", start, false)
+// submit.addEventListener(onclick, final, false)
+// resetbtn.addEventListener(onclick, TotalReset, false)
 
 // record highest previous
 
