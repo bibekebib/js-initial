@@ -1,22 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <link href="typing.css" rel="stylesheet"/>
         <meta charset="UTF-8"/>
         <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
         <title>Typing Test</title>
     </head>
-    <body>
+    <body class="mainBody">
+        <br/>
+        <br/>
+        <div class="lang">Welcome to Typing Test! Test your Speed.</div>
+
         <div class="typespeed">
             <textarea cols="50" id="type" name="typing" placeholder="start typing here! Once you are done, press submit!" rows="10"></textarea>
         </div>
-        <button class="submitbt" type="submit" onclick="final()">Sumbit</button>
-        <button class="resetbt" type="reset" onclick="TotalReset()">Reset</button>
-        <div class="speed"></div>
-        <div class="totalwords"></div>
-        <div class="final"></div>
-        <div class="prehigh">
-            The previous highest speed was:
-        </div>
+        <section class="restOf">
+            <!-- <button class="submitbt" onclick="final()" type="submit">Sumbit</button> -->
+            <button class="resetbt" onclick="TotalReset()" type="reset">Reset</button>
+            <div class="speed">
+                Total Time Taken :
+            </div>
+            <div class="totalwords">
+                Total words typed:
+            </div>
+            <div class="final"></div>
+            <!-- <div class="prehigh">
+        The previous highest speed was:
+      </div> -->
+            <footer>
+                designed by :
+                <a href="www.chalisebibek.com.np">BiBek Chalise</a>
+            </footer>
+        </section>
     </body>
     <script src="typing.js"></script>
 </html>

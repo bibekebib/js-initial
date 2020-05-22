@@ -1,0 +1,25 @@
+* {
+  padding: 3px;
+  margin: 2px;
+}
+
+.mainBody {
+  background-color: rgba(202, 197, 204, 0.76);
+  text-align: center;
+}
+.lang {
+  background: grey;
+  font-size: 24px;
+}
+.typespeed {
+  background: wheat;
+}
+.typespeed textarea {
+  color: aqua;
+  font-size: 16px;
+  border: 5px solid;
+  border-radius: 10px;
+}
+.restOf {
+  background: slateblue;
+}
